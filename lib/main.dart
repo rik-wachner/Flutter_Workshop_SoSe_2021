@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/meals_screen.dart';
 
 void main() => runApp(MyCoreApp());
 
@@ -9,12 +10,8 @@ class MyCoreApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Rezept App'),
-        ),
-        body: Text('TODO...'),
-      ),
+      // Scaffold == "Eine Page / Ein Screen"
+      home: MealsScreen()
     );
   }
 }
